@@ -74,7 +74,7 @@ import java.util.stream.Collectors;
  * 远程公告、频率等
  * try catch
  * 多买号情况下，不选择买号接单的问题
- *
+ *------------------------------------
  * 这个模式都用这套代码
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
