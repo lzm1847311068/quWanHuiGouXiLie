@@ -3,12 +3,12 @@
     package="com.example.quwanhuigou">
 
 
-<!--    <queries>-->
-<!--        <package android:name="com.lzm.qwhg" />-->
-<!--    </queries>-->
     <queries>
-        <package android:name="com.lzm.zcjb" />
+        <package android:name="com.lzm.qwhg" />
     </queries>
+<!--    <queries>-->
+<!--        <package android:name="com.lzm.zcjb" />-->
+<!--    </queries>-->
 
 
 

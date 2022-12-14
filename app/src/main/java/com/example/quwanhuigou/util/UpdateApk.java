@@ -23,8 +23,8 @@ import com.lzy.okgo.request.base.Request;
 public class UpdateApk {
 
 
-//    private static String PT_URL = "quWanHuiGou";
-    private static String PT_URL = "zhaoCaiJinBao";
+    private static String PT_URL = "quWanHuiGou";
+//    private static String PT_URL = "zhaoCaiJinBao";
 
 
     public static void update(Activity context){     //http://47.94.255.103

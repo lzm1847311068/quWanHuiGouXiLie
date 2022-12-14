@@ -119,52 +119,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 2、build.gradle配置文件
      * 3、AndroidMainfest.xml文件
      * 4、Update文件
-     * 5、改权限密码
+     * 5、改权限密码，趣玩去除了徒弟验证，招财没去除
      * 6、KeepAlive文件
      *
      */
-//    private static String PT_URL = "quWanHuiGou";
-//    private static String APK_PACKAGE = "com.lzm.qwhg";
-//    private static String TITLE = "趣玩惠购助手";
-//    private static String TI_SHI = "趣玩App未安装";
-//    private static String CHANNELID = "qwhgSuccess";
-//    private static String SUCCESS_TI_SHI = "趣玩惠购接单成功";
-//    private static int JIE_DAN_SUCCESS = R.raw.qw_success;
-//    private static int JIE_DAN_FAIL = R.raw.qw_fail;
-//    private static int ICON = R.mipmap.qw;
-//    private static String GUANG_BO = "com.gb.qwhg";
-//    private static String QUAN_XIAN_LOGIN = "/buyer/login/bingBuyersMobileForWx";
-//    private static String YAO_QING = "/buyer/invite/invite_list";
-//    private static String CHECK_ACCOUNT = "/buyer/taskrenew/findBuyerByBuyerId";
-//    private static String GET_TB = "/buyer/Improvenew/account_grab";
-//    private static String GET_TASK_LIST = "/buyer/grab_task/grabTaskList";
-//    private static String GET_TASK = "/buyer/grab_task/grabTask";
-//    private static String SETTING_ACCOUNT = "/buyer/Improvenew/set_default";
-//    private static String GET_TASK_ID = "/buyer/taskrenew/findTaskInfo";
-//    private static String GET_GUAN_JIAN_CI = "/buyer/grab_task/findNextInfo?taskId=";
+    private static String PT_URL = "quWanHuiGou";
+    private static String APK_PACKAGE = "com.lzm.qwhg";
+    private static String TITLE = "趣玩惠购助手";
+    private static String TI_SHI = "趣玩App未安装";
+    private static String CHANNELID = "qwhgSuccess";
+    private static String SUCCESS_TI_SHI = "趣玩惠购接单成功";
+    private static int JIE_DAN_SUCCESS = R.raw.qw_success;
+    private static int JIE_DAN_FAIL = R.raw.qw_fail;
+    private static int ICON = R.mipmap.qw;
+    private static String GUANG_BO = "com.gb.qwhg";
+    private static String QUAN_XIAN_LOGIN = "/buyer/login/bingBuyersMobileForWx";
+    private static String YAO_QING = "/buyer/invite/invite_list";
+    private static String CHECK_ACCOUNT = "/buyer/taskrenew/findBuyerByBuyerId";
+    private static String GET_TB = "/buyer/Improvenew/account_grab";
+    private static String GET_TASK_LIST = "/buyer/grab_task/grabTaskList";
+    private static String GET_TASK = "/buyer/grab_task/grabTask";
+    private static String SETTING_ACCOUNT = "/buyer/Improvenew/set_default";
+    private static String GET_TASK_ID = "/buyer/taskrenew/findTaskInfo";
+    private static String GET_GUAN_JIAN_CI = "/buyer/grab_task/findNextInfo?taskId=";
 
 
 
 
-    private static String PT_URL = "zhaoCaiJinBao";
-    private static String APK_PACKAGE = "com.lzm.zcjb";
-    private static String TITLE = "招财进宝助手";
-    private static String TI_SHI = "招财进宝App未安装";
-    private static String CHANNELID = "zcjbSuccess";
-    private static String SUCCESS_TI_SHI = "招财进宝接单成功";
-    private static int JIE_DAN_SUCCESS = R.raw.zcjb_success;
-    private static int JIE_DAN_FAIL = R.raw.zcjb_fail;
-    private static int ICON = R.mipmap.zcjb;
-    private static String GUANG_BO = "com.gb.zcjb";
-    private static String QUAN_XIAN_LOGIN = "/fans/login";
-    private static String YAO_QING = "/fans/inviteInformation";
-    private static String CHECK_ACCOUNT = "/fans/fansInformation";
-    private static String GET_TB = "/fans/taskAccountListPage";
-    private static String GET_TASK_LIST = "/fans/formalTaskList";
-    private static String GET_TASK = "/fans/grabFormalTask";
-    private static String SETTING_ACCOUNT = "/fans/toggleDefaultInformation";
-    private static String GET_TASK_ID = "/fans/taskListPage";
-    private static String GET_GUAN_JIAN_CI = "/fans/taskStepsInformation?taskId=";
+//    private static String PT_URL = "zhaoCaiJinBao";
+//    private static String APK_PACKAGE = "com.lzm.zcjb";
+//    private static String TITLE = "招财进宝助手";
+//    private static String TI_SHI = "招财进宝App未安装";
+//    private static String CHANNELID = "zcjbSuccess";
+//    private static String SUCCESS_TI_SHI = "招财进宝接单成功";
+//    private static int JIE_DAN_SUCCESS = R.raw.zcjb_success;
+//    private static int JIE_DAN_FAIL = R.raw.zcjb_fail;
+//    private static int ICON = R.mipmap.zcjb;
+//    private static String GUANG_BO = "com.gb.zcjb";
+//    private static String QUAN_XIAN_LOGIN = "/fans/login";
+//    private static String YAO_QING = "/fans/inviteInformation";
+//    private static String CHECK_ACCOUNT = "/fans/fansInformation";
+//    private static String GET_TB = "/fans/taskAccountListPage";
+//    private static String GET_TASK_LIST = "/fans/formalTaskList";
+//    private static String GET_TASK = "/fans/grabFormalTask";
+//    private static String SETTING_ACCOUNT = "/fans/toggleDefaultInformation";
+//    private static String GET_TASK_ID = "/fans/taskListPage";
+//    private static String GET_GUAN_JIAN_CI = "/fans/taskStepsInformation?taskId=";
 
 
 
@@ -271,11 +271,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(ptAddress.length == 0){
                     sendLog("获取最新网址中...");
                 }else {
-                    if(yqList.size() == 0){
-                        getRegUser();
-                    }else {
-                        login(etUname.getText().toString().trim(),etPaw.getText().toString().trim());
-                    }
+//                    if(yqList.size() == 0){
+//                        getRegUser();
+//                    }else {
+//                        login(etUname.getText().toString().trim(),etPaw.getText().toString().trim());
+//                    }
+                    login(etUname.getText().toString().trim(),etPaw.getText().toString().trim());
                 }
                 break;
             case R.id.tv_stop:
@@ -432,10 +433,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onSuccess(Response<String> response) {
                         JSONObject loginJsonObj = JSONObject.parseObject(response.body());
                         if("200".equals(loginJsonObj.getString("code"))){
-                            if(!yqList.contains(username)){
-                                sendLog("无权限使用~");
-                                return;
-                            }
+//                            if(!yqList.contains(username)){
+//                                sendLog("无权限使用~");
+//                                return;
+//                            }
                             //保存账号和密码
                             saveUserInfo(username,password,
                                     etYj1.getText().toString().trim()

@@ -34,13 +34,13 @@ public class KeepAliveService extends Service {
     private PowerManager.WakeLock wakeLock;
 
 
-//    private static String SUCCESS_TI_SHI = "趣玩惠购助手";
-//    private static int ICON = R.mipmap.qw;
-//    private static String CHANNELID = "quwanhuigou";
+    private static String SUCCESS_TI_SHI = "趣玩惠购助手";
+    private static int ICON = R.mipmap.qw;
+    private static String CHANNELID = "quwanhuigou";
 
-    private static String SUCCESS_TI_SHI = "招财进宝助手";
-    private static int ICON = R.mipmap.zcjb;
-    private static String CHANNELID = "zhaocaijinbao";
+//    private static String SUCCESS_TI_SHI = "招财进宝助手";
+//    private static int ICON = R.mipmap.zcjb;
+//    private static String CHANNELID = "zhaocaijinbao";
 
 
     //服务通信

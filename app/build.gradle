@@ -7,14 +7,14 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-//        applicationId "com.example.quwanhuigou"
-        applicationId "com.example.zhaocaijinbao"
+        applicationId "com.example.quwanhuigou"
+//        applicationId "com.example.zhaocaijinbao"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
 
-//        versionName "1.1.2"
-        versionName "1.0"
+        versionName "1.1.3"
+//        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,8 +35,8 @@ android {
     applicationVariants.all{ variant->
         variant.outputs.all { output->
             if(variant.buildType.name.equals('release')){
-//                outputFileName = "趣玩惠购助手v" + defaultConfig.versionName + ".apk"
-                outputFileName = "招财进宝助手v" + defaultConfig.versionName + ".apk"
+                outputFileName = "趣玩惠购助手v" + defaultConfig.versionName + ".apk"
+//                outputFileName = "招财进宝助手v" + defaultConfig.versionName + ".apk"
             }
             if(variant.buildType.name.equals('beta')){
 
